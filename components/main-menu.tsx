@@ -7,10 +7,10 @@ import Image from 'next/image';
 import logo from '../public/logo/sally@150.svg';
 
 const navigation = [
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
+  // { name: 'Product', href: '#' },
+  // { name: 'Features', href: '#' },
+  // { name: 'Marketplace', href: '#' },
+  // { name: 'Company', href: '#' },
 ]
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
