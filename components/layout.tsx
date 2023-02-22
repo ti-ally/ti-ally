@@ -1,5 +1,5 @@
 import React from "react";
-import cn from 'classname';
+import cn from 'classnames';
 
 import Header from "./header";
 import Footer from "./footer";

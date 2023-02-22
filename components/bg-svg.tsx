@@ -1,5 +1,5 @@
 import React from "react"
-import cn from 'classname';
+import cn from 'classnames';
 
 interface Props extends React.SVGProps<SVGSVGElement> {
   name: string;

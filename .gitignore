@@ -43,3 +43,7 @@ Thumbs.db
 /test-results/
 /playwright-report/
 /playwright/.cache/
+
+out/
+nextImageExportOptimizer
+next-image-export-optimizer-hashes.json

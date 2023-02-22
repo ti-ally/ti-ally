@@ -2,16 +2,20 @@ import React, { useState } from "react";
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Link from "next/link";
-import Image from 'next/image';
+import Image from '../components/image';
 
 import logo from '../public/logo/sally@150.svg';
 
-const navigation = [
+type MenuItem = {
+  name: string;
+  href: string;
+}
+const navigation: MenuItem[] = [
   // { name: 'Product', href: '#' },
   // { name: 'Features', href: '#' },
   // { name: 'Marketplace', href: '#' },
   // { name: 'Company', href: '#' },
-]
+];
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
 
@@ -29,7 +33,7 @@ export default function MainMenu({
       <nav className="flex items-center justify-between" aria-label="Global">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
+            <span className="sr-only">Sally</span>
             <Image className="h-8" src={logo} alt="logo" />
           </Link>
         </div>
@@ -57,8 +61,8 @@ export default function MainMenu({
         <Dialog.Panel className="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
           <div className="flex items-center justify-between">
             <Link href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+              <span className="sr-only">Sally</span>
+              <Image className="h-8" src={logo} alt="logo" />
             </Link>
             <button
               type="button"

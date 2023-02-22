@@ -1,7 +1,9 @@
 
 import React from "react";
-import Image, { StaticImageData } from "next/image";
+import type { StaticImageData } from "next/image";
 import Link from "next/link";
+
+import Image from '../components/image';
 
 interface Props extends React.HTMLProps<HTMLDivElement> {
   heroImage: StaticImageData;

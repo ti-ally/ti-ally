@@ -1,5 +1,5 @@
 
-const getIcon = (name, color) => {
+const getIcon = (name: string, color?: string) => {
   switch(name) {
     case 'Apple':
       return (
@@ -107,7 +107,14 @@ const getIcon = (name, color) => {
   }
 }
 
-const Icon = (props) => {
+type Props = {
+  id?: string,
+  name: string,
+  color?: string;
+  viewBox?: string;
+  className?: string;
+}
+const Icon = (props: Props) => {
   const { id = '', name, color, viewBox = '0 0 100 100', className } = props
 
   return (
