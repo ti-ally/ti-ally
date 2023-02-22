@@ -1,0 +1,51 @@
+{
+  "name": "ti-ally-pages",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "lint:fix": "next lint --fix"
+  },
+  "private": true,
+  "dependencies": {
+    "@floating-ui/react": "^0.19.0",
+    "@headlessui/react": "~1.7.11",
+    "@headlessui/tailwindcss": "^0.1.2",
+    "@heroicons/react": "~2.0.14",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "bootstrap-icons": "^1.10.3",
+    "classname": "^0.0.0",
+    "debug": "^4.3.4",
+    "next": "13.1.6",
+    "postcss": "^8.4.21",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-window": "^1.8.8",
+    "tailwindcss": "^3.2.7",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@next/font": "13.1.6",
+    "@types/node": "18.14.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "@types/react-window": "^1.8.5",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "@typescript-eslint/parser": "^5.36.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "~8.15.0",
+    "eslint-config-next": "13.1.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsx-a11y": "6.6.1",
+    "eslint-plugin-react": "7.31.11",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "prettier": "^2.6.2",
+    "typescript": "~4.9.5"
+  }
+}
