@@ -1,7 +1,22 @@
 //@ts-check
 
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+
+let assetPrefix = undefined;
+let basePath = '';
+
+if (isGithubActions) {
+  console.log('\n\n### Building For gh-pages ###\n\n');
+
+  const repo = 'ti-ally';
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath,
+  assetPrefix,
   images: {
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],

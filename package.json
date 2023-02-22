@@ -6,8 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "next build && next export && next-image-export-optimizer",
-    "serve": "serve out",
+    "export": "GITHUB_ACTIONS=true next build && next export && yarn export:post",
+    "export:post": "next-image-export-optimizer && mkdir -p _out && mv out _out/ti-ally && touch _out/ti-ally/.nojekyll",
+    "clean:export": "rm -rf _out",
+    "serve": "serve _out",
+    "deploy": "gh-pages --dotfiles --dist _out/ti-ally",
     "lint": "next lint",
     "lint:fix": "next lint --fix"
   },
@@ -48,6 +51,7 @@
     "eslint-plugin-jsx-a11y": "6.6.1",
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
+    "gh-pages": "^5.0.0",
     "prettier": "^2.6.2",
     "typescript": "~4.9.5"
   }

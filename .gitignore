@@ -44,6 +44,7 @@ Thumbs.db
 /playwright-report/
 /playwright/.cache/
 
-out/
+/out
+/_out
 nextImageExportOptimizer
 next-image-export-optimizer-hashes.json
